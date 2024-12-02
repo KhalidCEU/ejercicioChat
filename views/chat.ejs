@@ -1,0 +1,13 @@
+<%- include("header", {}) %>
+<title><%= title %></title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<script src="/socket.io/socket.io.js" defer></script>
+<script src="/javascripts/chat.js" defer></script>
+<script>
+    const username = '<%= user %>';
+</script>
+<ul id="messages"></ul>
+<form id="form">
+    <input id="input" placeholder="Escribe un mensaje">
+    <button>Send</button>
+</form>
